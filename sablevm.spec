@@ -1,12 +1,12 @@
 Summary:	Extremely portable, efficient, and specification-compliant Java virtual machine.
 Summary(pl):	Przeno¶na i zgodna z specyfikacj± wirtualna maszyna Javy
 Name:		sablevm
-Version:	1.1.6
+Version:	1.1.7
 Release:	1
 License:	LGPL
 Group:		Development/Languages/Java
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	94798274f59d9abbd7d09a1050d608de
+# Source0-md5:	7986ee5b2fcd92390afe7942940bdb09
 URL:		http://sablevm.org/
 BuildRequires:	automake
 BuildRequires:	libffi-devel
