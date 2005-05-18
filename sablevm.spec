@@ -78,7 +78,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/libsablevm-*.so
 %{_mandir}/man?/*
+%dir %{_libdir}/%{name}-classpath
 %attr(755,root,root) %{_libdir}/%{name}-classpath/*.so
+%dir %{_datadir}/%{name}-classpath
 %{_datadir}/%{name}-classpath/*.jar
 
 %files devel
