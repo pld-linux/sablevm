@@ -2,7 +2,7 @@ Summary:	Extremely portable, efficient, and specification-compliant Java virtual
 Summary(pl):	Przeno¶na i zgodna z specyfikacj± wirtualna maszyna Javy
 Name:		sablevm
 Version:	1.11.3
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Development/Languages/Java
 Source0:	http://sablevm.org/download/release/%{version}/%{name}-%{version}.tar.gz
@@ -14,6 +14,7 @@ BuildRequires:	automake
 BuildRequires:	libffi-devel
 BuildRequires:	libltdl-devel
 BuildRequires:	popt-devel
+BuildRequires:	jikes
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -52,7 +53,8 @@ CXXFLAGS="%{rpmcflags} -fno-exceptions -fno-rtti"
 cd %{name}-classpath-%{version}
 cp -f /usr/share/automake/config.sub .
 CXXFLAGS="%{rpmcflags} -fno-exceptions -fno-rtti"
-%configure
+%configure \
+	--with-jikes
 %{__make}
 
 %install
