@@ -11,10 +11,10 @@ Source1:	http://sablevm.org/download/release/%{version}/%{name}-classpath-%{vers
 # Source1-md5:	0aed850f5583199b3d1adb41ac2043ed
 URL:		http://sablevm.org/
 BuildRequires:	automake
+BuildRequires:	jikes
 BuildRequires:	libffi-devel
 BuildRequires:	libltdl-devel
 BuildRequires:	popt-devel
-BuildRequires:	jikes
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
