@@ -1,14 +1,34 @@
+
+# TODO:
+# - Unpackaged files:
+# /usr/include/jawt.h
+# /usr/include/jawt_md.h
+# /usr/lib/sablevm-classpath/libgjsmalsa.la
+# /usr/lib/sablevm-classpath/libgtkpeer.la
+# /usr/lib/sablevm-classpath/libjavaio.la
+# /usr/lib/sablevm-classpath/libjavalang.la
+# /usr/lib/sablevm-classpath/libjavalangreflect.la
+# /usr/lib/sablevm-classpath/libjavanet.la
+# /usr/lib/sablevm-classpath/libjavanio.la
+# /usr/lib/sablevm-classpath/libjavautil.la
+# /usr/lib/sablevm-classpath/libjawtgnu.la
+# /usr/lib/sablevm/bin/jdb
+# /usr/lib/security/classpath.security
+# /usr/share/sablevm/AUTHORS
+# /usr/share/sablevm/LGPL-2.1
+# /usr/share/sablevm/LICENSE									
+
 Summary:	Extremely portable, efficient, and specification-compliant Java virtual machine.
 Summary(pl):	Przeno¶na i zgodna z specyfikacj± wirtualna maszyna Javy
 Name:		sablevm
-Version:	1.11.3
-Release:	2
+Version:	1.13
+Release:	1
 License:	LGPL
 Group:		Development/Languages/Java
 Source0:	http://sablevm.org/download/release/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	aea6e808c5f2e3646a60971485220bff
+# Source0-md5:	d5828200032bfe921dd43e450931e38c
 Source1:	http://sablevm.org/download/release/%{version}/%{name}-classpath-%{version}.tar.gz
-# Source1-md5:	0aed850f5583199b3d1adb41ac2043ed
+# Source1-md5:	9476bb7a0ad67c6cfa353d06f094cdce
 URL:		http://sablevm.org/
 BuildRequires:	automake
 BuildRequires:	jikes
@@ -16,6 +36,7 @@ BuildRequires:	libffi-devel
 BuildRequires:	libltdl-devel
 BuildRequires:	popt-devel
 BuildRequires:	zlib-devel
+Requires:	fastjar
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
