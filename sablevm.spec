@@ -19,7 +19,7 @@
 # /usr/share/sablevm/LICENSE									
 
 Summary:	Extremely portable, efficient, and specification-compliant Java virtual machine.
-Summary(pl):	Przeno¶na i zgodna z specyfikacj± wirtualna maszyna Javy
+Summary(pl.UTF-8):   PrzenoÅ›na i zgodna z specyfikacjÄ… wirtualna maszyna Javy
 Name:		sablevm
 Version:	1.13
 Release:	1
@@ -43,13 +43,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 SableVM is a highly-portable Java virtual machine written in C, and
 implementing the Java virtual machine specification, second edition.
 
-%description -l pl
-SableVM jest przeno¶n± maszyn± wirtualn± Javy napisan± w C, oraz 
-implementuj±c± drugie wydanie specyfikacji maszyny wirtualnej Javy.
+%description -l pl.UTF-8
+SableVM jest przenoÅ›nÄ… maszynÄ… wirtualnÄ… Javy napisanÄ… w C, oraz 
+implementujÄ…cÄ… drugie wydanie specyfikacji maszyny wirtualnej Javy.
 
 %package devel
 Summary:	JNI header files for SableVM library
-Summary(pl):	Pliki nag³ówkowe JNI dla biblioteki SableVM
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe JNI dla biblioteki SableVM
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libffi-devel
@@ -59,8 +59,8 @@ Requires:	zlib-devel
 %description devel
 JNI header files for SableVM library.
 
-%description devel -l pl
-Pliki nag³ówkowe JNI dla biblioteki SableVM.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe JNI dla biblioteki SableVM.
 
 %prep
 %setup -q -a 1
