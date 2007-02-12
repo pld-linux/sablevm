@@ -19,7 +19,7 @@
 # /usr/share/sablevm/LICENSE									
 
 Summary:	Extremely portable, efficient, and specification-compliant Java virtual machine.
-Summary(pl.UTF-8):   Przenośna i zgodna z specyfikacją wirtualna maszyna Javy
+Summary(pl.UTF-8):	Przenośna i zgodna z specyfikacją wirtualna maszyna Javy
 Name:		sablevm
 Version:	1.13
 Release:	1
@@ -49,7 +49,7 @@ implementującą drugie wydanie specyfikacji maszyny wirtualnej Javy.
 
 %package devel
 Summary:	JNI header files for SableVM library
-Summary(pl.UTF-8):   Pliki nagłówkowe JNI dla biblioteki SableVM
+Summary(pl.UTF-8):	Pliki nagłówkowe JNI dla biblioteki SableVM
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libffi-devel
